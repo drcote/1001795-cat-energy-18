@@ -1,6 +1,6 @@
 .promo {
-  background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
   @include mobile-padding;
+  background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
 }
 
 .promo_title {
@@ -9,4 +9,5 @@
 
 .promo__text {
   @include font-text($primary-font, 14px, 1, #ffffff);
+  text-transform: uppercase;
 }

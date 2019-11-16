@@ -21,3 +21,8 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+// временный миксин для тревиса
+@mixin temp {
+  text-decoration: inherit;
+}

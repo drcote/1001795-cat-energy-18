@@ -1,10 +1,11 @@
 .extra {
-  border: solid 1px #ededed;
   @include mobile-margin;
+  border: solid 1px #ededed;
 }
 
-.extra__sub-title {
+.extra__title {
   @include font-text($primary-font, 16px, 1.25, #111111);
+  text-transform: uppercase;
 }
 
 .extra__sub-title {
