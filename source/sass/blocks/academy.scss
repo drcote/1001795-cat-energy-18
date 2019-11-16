@@ -1,0 +1,4 @@
+.academy__text {
+  @include font-text ($secondary-font, 14px, 1, #444444);
+  @include reset-list;
+}

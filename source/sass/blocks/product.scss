@@ -1,0 +1,12 @@
+.product {
+  border: solid 1px #ededed;
+  @include mobile-padding;
+}
+
+.product__title {
+  @include font-text($primary-font, 16px, 1.25, #111111);
+}
+
+.product__table {
+  @include font-text($secondary-font, 12px, 1.33, #444444);
+}

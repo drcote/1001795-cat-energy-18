@@ -1,0 +1,13 @@
+.offer {
+  background-color: $bg-sections;
+  padding: 22px 36px 22px 20px;
+  margin-top: 20px;
+}
+
+.offer__title {
+  @include font-text ($primary-font, 24px, 1.54, #111111);
+}
+
+.offer__text {
+  @include font-text($secondary-font, 14px, 1.29, #444444);
+}
