@@ -1,4 +1,4 @@
 .products__title {
-  @include font-text($primary-font, 36px, 1.67, #111111);
+  @include font-text($primary-font, 36px, 1.67, $title-color);
   @include mobile-padding;
 }

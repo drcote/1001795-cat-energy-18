@@ -3,11 +3,11 @@
 }
 
 .it-works__title {
-  @include font-text($primary-font, 36px, 1.67, #111111);
+  @include font-text($primary-font, 36px, 1.67, $title-color);
 }
 
 .it-works__item {
-  @include font-text($secondary-font, 14px, 1.29, #444444);
+  @include font-text($secondary-font, 14px, 1.29, $text-color);
   @include reset-list;
   padding-top: 32px;
 }

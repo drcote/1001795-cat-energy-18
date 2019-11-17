@@ -1,3 +1,33 @@
 .example {
-  @include temp;
+  @include mobile-padding;
+  padding-top: 33px;
+  padding-bottom: 38px;
+  background-color: $bg-sections;
+}
+
+.example__title {
+  @include font-text($primary-font, 36px, 1.67, $title-color);
+}
+
+.example__text {
+  @include font-text($secondary-font, 14px, 1.29, $text-color);
+}
+
+.example__results {
+  @include font-text($primary-font, 24px, 1, $title-color);
+}
+
+.example__description {
+  @include font-text($secondary-font, 12px, 1, $text-color);
+}
+
+.example__cost {
+  @include font-text($primary-font, 14px, 1.43, $title-color);
+  text-transform: uppercase;
+}
+
+.example__button-was,
+.example__button-become {
+  @include font-text($primary-font, 16px, 1.25, $title-color);
+  text-transform: uppercase;
 }
