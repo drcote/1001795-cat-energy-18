@@ -1,0 +1,28 @@
+@mixin font-text ($font, $size, $line, $color, $weight: normal) {
+  font-family: $font, "Helvetica", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  color: $color;
+}
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin mobile-margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@mixin mobile-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// временный миксин для тревиса
+@mixin temp {
+  text-decoration: inherit;
+}

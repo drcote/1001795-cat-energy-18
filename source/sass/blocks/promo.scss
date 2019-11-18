@@ -1,0 +1,13 @@
+.promo {
+  @include mobile-padding;
+  background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
+}
+
+.promo_title {
+  @include font-text($primary-font, 36px, 1, #ffffff);
+}
+
+.promo__text {
+  @include font-text($primary-font, 14px, 1, #ffffff);
+  text-transform: uppercase;
+}

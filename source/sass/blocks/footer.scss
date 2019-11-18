@@ -1,0 +1,4 @@
+.footer {
+  @include mobile-padding;
+  background-color: $bg-sections;
+}

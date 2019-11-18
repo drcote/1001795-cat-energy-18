@@ -1,0 +1,7 @@
+.site-list {
+  @include reset-list;
+}
+
+.site-list__item {
+  @include font-text($primary-font, 20px, 1, #111111);
+}
