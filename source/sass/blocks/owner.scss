@@ -1,3 +1,13 @@
-.owner {
-  @include temp;
+.owner__legend {
+  @include font-text($primary-font, 24px, 1, $title-color);
+}
+
+.owner__label {
+  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  text-transform: uppercase;
+}
+
+.owner__input {
+  @include font-text($primary-font, 16px, 1.13, $text-color);
+  text-transform: uppercase;
 }

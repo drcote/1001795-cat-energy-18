@@ -1,4 +1,19 @@
 .footer {
-  @include mobile-padding;
   background-color: $bg-sections;
+}
+
+.footer__text {
+  @include font-text($primary-font, 16px, 1.25, $title-color);
+}
+
+.footer__address {
+  @include font-text($secondary-font, 14px, 1.43, $text-color);
+}
+
+.footer__wrap {
+  @include mobile-padding;
+}
+
+.footer__wrap--main {
+  background-color: white;
 }

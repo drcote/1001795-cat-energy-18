@@ -1,3 +1,15 @@
-.add-prod {
-  @include temp;
+.add-prod__title {
+  @include font-text($primary-font, 24px, 1, $title-color);
+}
+
+.add-item__title {
+  @include font-text($primary-font, 16px, 1, $title2-color);
+}
+
+.add-item__description {
+  @include font-text($secondary-font, 14px, 1, $text-color);
+}
+
+.add-item__cost {
+  @include font-text($secondary-font, 14px, 1, $text-color);
 }

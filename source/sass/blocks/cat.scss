@@ -1,3 +1,9 @@
-.cat {
-  @include temp;
+.cat__label {
+  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  text-transform: uppercase;
+}
+
+.cat__input {
+  @include font-text($primary-font, 16px, 1.13, $text-color);
+  text-transform: uppercase;
 }

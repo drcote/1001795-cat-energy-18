@@ -1,3 +1,8 @@
-.comment {
-  @include temp;
+.comment__legend {
+  @include font-text($primary-font, 24px, 1, $title-color);
+}
+
+.comment__textarea {
+  @include font-text($primary-font, 16px, 1.13, $text-color);
+  text-transform: uppercase;
 }

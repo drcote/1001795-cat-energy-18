@@ -1,3 +1,8 @@
-.food {
-  @include temp;
+.food__legend {
+  @include font-text($primary-font, 24px, 1, $title-color);
+}
+
+.food__label {
+  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  text-transform: uppercase;
 }
