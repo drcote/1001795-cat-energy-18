@@ -10,10 +10,6 @@
   @include font-text($secondary-font, 14px, 1.43, $text-color);
 }
 
-.footer__wrap {
-  @include mobile-padding;
-}
-
 .footer__wrap--main {
   background-color: white;
 }

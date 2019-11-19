@@ -12,16 +12,6 @@
   padding: 0;
 }
 
-@mixin mobile-margin {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-@mixin mobile-padding {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 // временный миксин для тревиса
 @mixin temp {
   text-decoration: inherit;
