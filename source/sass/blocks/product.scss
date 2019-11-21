@@ -10,3 +10,7 @@
 .product__table {
   @include font-text($secondary-font, 12px, 1.33, $text-color);
 }
+
+.product__wrap {
+  @include global-padding;
+}

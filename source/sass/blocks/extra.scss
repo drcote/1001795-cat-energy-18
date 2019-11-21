@@ -10,3 +10,7 @@
 .extra__sub-title {
   @include font-text($secondary-font, 12px, 1.33, $text-color);
 }
+
+.extra__wrap {
+  @include global-padding;
+}

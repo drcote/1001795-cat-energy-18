@@ -1,3 +1,55 @@
-.header {
-  @include temp;
+/* .header {
+  @include global-width;
+} */
+
+.header__wrap {
+  @include global-padding;
+}
+
+@media (min-width: $width-tablet) {
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__promo {
+  @include global-padding;
+}
+
+@media (min-width: $width-desktop) {
+  .header {
+    position: relative;
+  }
+
+  .header__wrap {
+    padding: 0;
+  }
+
+  .header__nav-wrap--main {
+    width: 50%;
+    //flex-grow: 1;
+    background: $bg-promo url("../img/index-background-desktop@1x.jpg") no-repeat left center;
+  }
+
+  .header__nav {
+    width: 610px;
+    margin-right: auto;
+  }
+
+  .header__logo-wrap {
+    width: 610px;
+    margin-left: auto;
+    //width: 50%;
+    //flex-grow: 1;
+  }
+
+  .header__wrap--main {
+    height: 698px;
+  }
+
+  .header__promo {
+    position: absolute;
+    top: 226px;
+  }
 }

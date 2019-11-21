@@ -3,25 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Форма</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="logo header__logo">
-      <img src="img/logo-mobile.svg" alt="Кэт энерджи" class="logo__img" width="191px" height="39px">
-    </a>
-    <nav class="nav header__nav">
-      <button class="button nav__button">
-        <span class="visually-hidden">Отрыть меню</span>
-      </button>
-      <ul class="site-list nav__site-list">
-        <li class="site-list__item">Главная</li>
-        <li class="site-list__item">Каталог продукции</li>
-        <li class="site-list__item">Подбор программы</li>
-      </ul>
-    </nav>
+    <div class="header__wrap">
+      <div class="header__logo-wrap">
+        <a class="logo header__logo">
+          <img src="img/logo-mobile.svg" alt="Кэт энерджи" class="logo__img" width="191px" height="39px">
+        </a>
+      </div>
+      <div class="header__nav-wrap">
+        <nav class="nav header__nav">
+          <button class="button nav__button visually-hidden">
+            <span class="visually-hidden">Отрыть меню</span>
+          </button>
+          <ul class="site-list nav__site-list">
+            <li class="site-list__item">Главная</li>
+            <li class="site-list__item">Каталог продукции</li>
+            <li class="site-list__item">Подбор программы</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <main class="form-main">
     <h1 class="form-main__title">Подбор программы</h1>
@@ -69,8 +76,8 @@
       </fieldset>
       <input type="submit" value="Оправить заявку">
       <small class="legend add-form__legend">
-          <sup>*</sup> - Обязательные поля
-        </small>
+        <sup>*</sup> - Обязательные поля
+      </small>
     </form>
   </main>
   <footer class="footer">

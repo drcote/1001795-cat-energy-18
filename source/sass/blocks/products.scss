@@ -1,3 +1,27 @@
 .products__title {
+  @include global-padding;
   @include font-text($primary-font, 36px, 1.67, $title-color);
+}
+
+@media (min-width: $width-tablet) {
+  /*   .products {
+    @include container;
+  } */
+
+  .products__wrap {
+    @include global-padding;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .products__product {
+    width: 324px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .products__product {
+    width: 245px;
+  }
 }

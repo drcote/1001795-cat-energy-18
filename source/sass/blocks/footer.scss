@@ -2,14 +2,14 @@
   background-color: $bg-sections;
 }
 
-.footer__text {
-  @include font-text($primary-font, 16px, 1.25, $title-color);
-}
-
 .footer__address {
-  @include font-text($secondary-font, 14px, 1.43, $text-color);
+  @include global-padding;
 }
 
-.footer__wrap--main {
+.footer__address--main {
   background-color: white;
+}
+
+.footer__wrap {
+  @include global-width;
 }

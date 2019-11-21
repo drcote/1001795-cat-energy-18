@@ -1,12 +1,31 @@
 .promo {
   background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
+  height: 305px;
 }
 
-.promo_title {
-  @include font-text($primary-font, 36px, 1, #ffffff);
+.promo__title {
+  @include font-text($primary-font, 36px, 1, $title-color-white);
 }
 
 .promo__text {
-  @include font-text($primary-font, 14px, 1, #ffffff);
+  @include font-text($primary-font, 14px, 1, $title-color-white);
   text-transform: uppercase;
+}
+
+@media (min-width: $width-tablet) {
+  .promo {
+    background: none;
+  }
+
+  .promo__title,
+  .promo__text {
+    color: $title-color;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .promo__title,
+  .promo__text {
+    color: $title-color;
+  }
 }

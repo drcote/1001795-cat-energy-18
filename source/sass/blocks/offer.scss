@@ -1,6 +1,5 @@
 .offer {
   background-color: $bg-sections;
-  padding: 22px 36px 22px 20px;
   margin-top: 20px;
 }
 
@@ -11,4 +10,10 @@
 
 .offer__text {
   @include font-text($secondary-font, 14px, 1.29, $text-color);
+}
+
+@media (min-width: $width-desktop) {
+  .offer {
+    width: 570px;
+  }
 }
