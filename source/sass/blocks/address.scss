@@ -5,3 +5,9 @@
 .address__text {
   @include font-text($secondary-font, 14px, 1.43, $color-greyish-brown);
 }
+
+.address__wrap {
+  @include position-element;
+  display: flex;
+  justify-content: space-between;
+}
