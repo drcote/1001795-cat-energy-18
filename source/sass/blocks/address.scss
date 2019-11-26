@@ -11,3 +11,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.address--gray {
+  @media (min-width: $width-tablet) {
+    background-color: $bg-sections;
+  }
+}
