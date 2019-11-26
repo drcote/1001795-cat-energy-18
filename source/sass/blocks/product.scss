@@ -3,14 +3,11 @@
 }
 
 .product__title {
-  @include font-text($primary-font, 16px, 1.25, $title-color);
+  @include font-text($primary-font, 16px, 1.25, $color-dark);
   text-transform: uppercase;
 }
 
 .product__table {
-  @include font-text($secondary-font, 12px, 1.33, $text-color);
+  @include font-text($secondary-font, 12px, 1.33, $color-greyish-brown);
 }
 
-.product__wrap {
-  @include global-padding;
-}

@@ -1,9 +1,8 @@
 .offers {
+  @include position-element;
   margin-top: 2px;
-}
 
-@media (min-width: $width-desktop) {
-  .offers {
+  @media (min-width: $width-desktop) {
     display: flex;
     justify-content: space-between;
   }

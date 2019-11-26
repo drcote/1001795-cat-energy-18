@@ -1,15 +1,7 @@
-.address {
-  @include global-padding;
-}
-
 .address__title {
-  @include font-text($primary-font, 16px, 1.25, $title-color);
+  @include font-text($primary-font, 16px, 1.25, $color-dark);
 }
 
 .address__text {
-  @include font-text($secondary-font, 14px, 1.43, $text-color);
-}
-
-.address__wrap {
-  @include global-width;
+  @include font-text($secondary-font, 14px, 1.43, $color-greyish-brown);
 }

@@ -1,4 +1,4 @@
 .program__label {
-  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  @include font-text($primary-font, 16px, 1.13, $color-dark-gray);
   text-transform: uppercase;
 }

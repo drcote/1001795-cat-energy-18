@@ -1,6 +1,5 @@
 .products__title {
-  @include global-padding;
-  @include font-text($primary-font, 36px, 1.67, $title-color);
+  @include font-text($primary-font, 36px, 1.67, $color-dark);
 }
 
 @media (min-width: $width-tablet) {
@@ -9,7 +8,6 @@
   } */
 
   .products__wrap {
-    @include global-padding;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

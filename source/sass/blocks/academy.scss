@@ -1,7 +1,12 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+}
+
 .academy li {
   @include reset-list;
 }
 
 .academy__text {
-  @include font-text ($secondary-font, 14px, 1, $text-color);
+  @include font-text ($secondary-font, 14px, 1, $color-greyish-brown);
 }

@@ -2,14 +2,11 @@
   background-color: $bg-sections;
 }
 
-.footer__address {
-  @include global-padding;
-}
-
-.footer__address--main {
-  background-color: white;
-}
-
 .footer__wrap {
-  @include global-width;
+  @include position-element;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

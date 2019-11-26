@@ -1,9 +1,9 @@
 .cat__label {
-  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  @include font-text($primary-font, 16px, 1.13, $color-dark-gray);
   text-transform: uppercase;
 }
 
 .cat__input {
-  @include font-text($primary-font, 16px, 1.13, $text-color);
+  @include font-text($primary-font, 16px, 1.13, $color-greyish-brown);
   text-transform: uppercase;
 }

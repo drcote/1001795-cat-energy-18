@@ -1,8 +1,8 @@
 .form-main__title {
-  @include font-text($primary-font, 36px, 1.67, $title-color);
+  @include font-text($primary-font, 36px, 1.67, $color-dark);
 }
 
 .form-main__text {
-  @include font-text($primary-font, 14px, 1.29, $title-color);
+  @include font-text($primary-font, 14px, 1.29, $color-dark);
   text-transform: uppercase;
 }

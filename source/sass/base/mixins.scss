@@ -12,32 +12,22 @@
   padding: 0;
 }
 
-@mixin global-padding {
+@mixin position-element {
+  //width: 320px;
   padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
+    //width: $width-tablet;
     padding: 0 30px;
   }
 
   @media (min-width: $width-desktop) {
+    width: $width-desktop;
     padding: 0 40px;
   }
 }
 
-@mixin global-width {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $width-tablet) {
-    width: $width-tablet;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop;
-    margin: 0 auto;
-  }
-}
 
 // временный миксин для тревиса
 @mixin temp {

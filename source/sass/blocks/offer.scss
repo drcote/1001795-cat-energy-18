@@ -4,12 +4,12 @@
 }
 
 .offer__title {
-  @include font-text ($primary-font, 24px, 1.54, $title-color);
+  @include font-text ($primary-font, 24px, 1.54, $color-dark);
   text-transform: uppercase;
 }
 
 .offer__text {
-  @include font-text($secondary-font, 14px, 1.29, $text-color);
+  @include font-text($secondary-font, 14px, 1.29, $color-greyish-brown);
 }
 
 @media (min-width: $width-desktop) {

@@ -1,16 +1,8 @@
-.extra {
-  border: solid 1px #ededed;
-}
-
 .extra__title {
-  @include font-text($primary-font, 16px, 1.25, $title-color);
+  @include font-text($primary-font, 16px, 1.25, $color-dark);
   text-transform: uppercase;
 }
 
 .extra__sub-title {
-  @include font-text($secondary-font, 12px, 1.33, $text-color);
-}
-
-.extra__wrap {
-  @include global-padding;
+  @include font-text($secondary-font, 12px, 1.33, $color-greyish-brown);
 }
