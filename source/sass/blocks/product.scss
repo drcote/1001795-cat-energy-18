@@ -1,5 +1,6 @@
 .product {
-  border: solid 1px #ededed;
+  border: solid 1px $color-pinkish-grey;
+  padding: 0 20px;
 }
 
 .product__title {
@@ -10,4 +11,3 @@
 .product__table {
   @include font-text($secondary-font, 12px, 1.33, $color-greyish-brown);
 }
-

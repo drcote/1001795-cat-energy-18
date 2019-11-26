@@ -1,25 +1,23 @@
 .products__title {
+  @include position-element;
   @include font-text($primary-font, 36px, 1.67, $color-dark);
 }
 
-@media (min-width: $width-tablet) {
-  /*   .products {
-    @include container;
-  } */
-
-  .products__wrap {
+.products__wrap {
+  @media (min-width: $width-tablet) {
+    @include position-element;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  .products__product {
-    width: 324px;
-  }
 }
 
-@media (min-width: $width-desktop) {
-  .products__product {
+.products__product {
+  @media (min-width: $width-tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: $width-desktop) {
     width: 245px;
   }
 }

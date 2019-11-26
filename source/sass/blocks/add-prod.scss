@@ -13,3 +13,13 @@
 .add-item__cost {
   @include font-text($secondary-font, 14px, 1, $color-greyish-brown);
 }
+
+.add-prod {
+  @include position-element;
+}
+
+.add-prod__wrap {
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
+}

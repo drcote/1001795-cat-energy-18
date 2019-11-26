@@ -1,3 +1,7 @@
+.extra {
+  border: solid 1px $color-pinkish-grey;
+}
+
 .extra__title {
   @include font-text($primary-font, 16px, 1.25, $color-dark);
   text-transform: uppercase;
