@@ -28,6 +28,38 @@
   }
 }
 
+@mixin line {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5px;
+    background: $color-leaf;
+    top: 50%;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5px;
+    background: $color-leaf;
+    top: 50%;
+    right: 0;
+  }
+}
+
+@mixin clear-line-element($padding-top, $padding-right, $padding-bottom, $padding-left,$color:$color-lightest) {
+  position: relative;
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+  background: $color;
+  z-index: 100;
+}
+
 
 // временный миксин для тревиса
 @mixin temp {

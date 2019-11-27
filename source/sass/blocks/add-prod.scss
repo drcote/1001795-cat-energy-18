@@ -1,5 +1,14 @@
 .add-prod__title {
   @include font-text($primary-font, 24px, 1, $color-dark);
+  position: relative;
+
+  @media (min-width: $width-desktop) {
+    @include line;
+  }
+}
+// отступы для примера
+.add-prod__title-wrap {
+  @include clear-line-element(0, 20px, 0, 20px);
 }
 
 .add-item__title {
