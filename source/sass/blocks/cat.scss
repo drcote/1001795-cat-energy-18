@@ -7,3 +7,10 @@
   @include font-text($primary-font, 16px, 1.13, $color-greyish-brown);
   text-transform: uppercase;
 }
+
+.cat {
+  @include position-element;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}

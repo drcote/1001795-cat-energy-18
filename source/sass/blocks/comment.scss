@@ -6,3 +6,8 @@
   @include font-text($primary-font, 16px, 1.13, $color-greyish-brown);
   text-transform: uppercase;
 }
+
+.comment {
+  @include position-element;
+  border: none;
+}
