@@ -1,15 +1,15 @@
-.food__legend {
-  @include font-text($primary-font, 24px, 1, $color-dark);
-}
-
-.food__label {
-  @include font-text($primary-font, 16px, 1.13, $color-dark-gray);
-  text-transform: uppercase;
-}
-
 .food {
   @include position-element;
   border: none;
   display: flex;
   flex-direction: column;
+}
+
+.food__legend {
+  @include font-text($font-primary, 24px, 1, $color-dark);
+}
+
+.food__label {
+  @include font-text($font-primary, 16px, 1.13, $color-dark-gray);
+  text-transform: uppercase;
 }

@@ -1,27 +1,27 @@
 .example__title {
-  @include font-text($primary-font, 36px, 1.67, $color-dark);
+  @include font-text($font-primary, 36px, 1.67, $color-dark);
 }
 
 .example__text {
-  @include font-text($secondary-font, 14px, 1.29, $color-greyish-brown);
+  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
 }
 
 .example__results {
-  @include font-text($primary-font, 24px, 1, $color-dark);
+  @include font-text($font-primary, 24px, 1, $color-dark);
 }
 
 .example__description {
-  @include font-text($secondary-font, 12px, 1, $color-greyish-brown);
+  @include font-text($font-secondary, 12px, 1, $color-greyish-brown);
 }
 
 .example__cost {
-  @include font-text($primary-font, 14px, 1.43, $color-dark);
+  @include font-text($font-primary, 14px, 1.43, $color-dark);
   text-transform: uppercase;
 }
 
 .example__button-was,
 .example__button-become {
-  @include font-text($primary-font, 16px, 1.25, $color-dark);
+  @include font-text($font-primary, 16px, 1.25, $color-dark);
   text-transform: uppercase;
 }
 

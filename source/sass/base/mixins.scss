@@ -29,16 +29,9 @@
 }
 
 @mixin line {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 5px;
-    background: $color-leaf;
-    top: 50%;
-    left: 0;
-  }
+  position: relative;
 
+  &::before,
   &::after {
     content: "";
     position: absolute;
@@ -46,22 +39,20 @@
     height: 5px;
     background: $color-leaf;
     top: 50%;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
     right: 0;
   }
 }
 
-@mixin clear-line-element($padding-top, $padding-right, $padding-bottom, $padding-left,$color:$color-lightest) {
+@mixin clear-line-element($padding, $color:$color-lightest) {
   position: relative;
-  padding-top: $padding-top;
-  padding-right: $padding-right;
-  padding-bottom: $padding-bottom;
-  padding-left: $padding-left;
+  padding: $padding;
   background: $color;
   z-index: 100;
-}
-
-
-// временный миксин для тревиса
-@mixin temp {
-  text-decoration: inherit;
 }

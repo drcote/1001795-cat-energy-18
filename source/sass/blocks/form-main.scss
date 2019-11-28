@@ -1,6 +1,6 @@
 .form-main__title {
   @include position-element;
-  @include font-text($primary-font, 36px, 1.67, $color-dark);
+  @include font-text($font-primary, 36px, 1.67, $color-dark);
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -9,7 +9,7 @@
 
 .form-main__text {
   @include position-element;
-  @include font-text($primary-font, 14px, 1.29, $color-dark);
+  @include font-text($font-primary, 14px, 1.29, $color-dark);
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {

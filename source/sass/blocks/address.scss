@@ -1,9 +1,9 @@
 .address__title {
-  @include font-text($primary-font, 16px, 1.25, $color-dark);
+  @include font-text($font-primary, 16px, 1.25, $color-dark);
 }
 
 .address__text {
-  @include font-text($secondary-font, 14px, 1.43, $color-greyish-brown);
+  @include font-text($font-secondary, 14px, 1.43, $color-greyish-brown);
 }
 
 .address__wrap {

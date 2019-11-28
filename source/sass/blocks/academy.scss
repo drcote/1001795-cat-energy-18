@@ -8,5 +8,5 @@
 }
 
 .academy__text {
-  @include font-text ($secondary-font, 14px, 1, $color-greyish-brown);
+  @include font-text ($font-secondary, 14px, 1, $color-greyish-brown);
 }
