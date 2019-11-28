@@ -1,4 +1,11 @@
 .program__label {
-  @include font-text($primary-font, 16px, 1.13, $title2-color);
+  @include font-text($primary-font, 16px, 1.13, $color-dark-gray);
   text-transform: uppercase;
+}
+
+.program {
+  @include position-element;
+  border: 1px solid $color-pinkish-grey;
+  display: flex;
+  flex-direction: column;
 }

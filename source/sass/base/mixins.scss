@@ -12,15 +12,54 @@
   padding: 0;
 }
 
-@mixin mobile-margin {
-  margin-left: 20px;
-  margin-right: 20px;
+@mixin position-element {
+  //width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    //width: $width-tablet;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding: 0 40px;
+  }
 }
 
-@mixin mobile-padding {
-  padding-left: 20px;
-  padding-right: 20px;
+@mixin line {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5px;
+    background: $color-leaf;
+    top: 50%;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5px;
+    background: $color-leaf;
+    top: 50%;
+    right: 0;
+  }
 }
+
+@mixin clear-line-element($padding-top, $padding-right, $padding-bottom, $padding-left,$color:$color-lightest) {
+  position: relative;
+  padding-top: $padding-top;
+  padding-right: $padding-right;
+  padding-bottom: $padding-bottom;
+  padding-left: $padding-left;
+  background: $color;
+  z-index: 100;
+}
+
 
 // временный миксин для тревиса
 @mixin temp {

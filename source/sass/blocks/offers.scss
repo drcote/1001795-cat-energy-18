@@ -1,4 +1,9 @@
 .offers {
-  @include mobile-margin;
+  @include position-element;
   margin-top: 2px;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

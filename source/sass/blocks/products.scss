@@ -1,4 +1,23 @@
 .products__title {
-  @include font-text($primary-font, 36px, 1.67, $title-color);
-  @include mobile-padding;
+  @include position-element;
+  @include font-text($primary-font, 36px, 1.67, $color-dark);
+}
+
+.products__wrap {
+  @media (min-width: $width-tablet) {
+    @include position-element;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.products__product {
+  @media (min-width: $width-tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+  }
 }

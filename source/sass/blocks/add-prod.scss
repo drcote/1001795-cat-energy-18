@@ -1,15 +1,34 @@
 .add-prod__title {
-  @include font-text($primary-font, 24px, 1, $title-color);
+  @include font-text($primary-font, 24px, 1, $color-dark);
+  position: relative;
+
+  @media (min-width: $width-desktop) {
+    @include line;
+  }
+}
+// отступы для примера
+.add-prod__title-wrap {
+  @include clear-line-element(0, 20px, 0, 20px);
 }
 
 .add-item__title {
-  @include font-text($primary-font, 16px, 1, $title2-color);
+  @include font-text($primary-font, 16px, 1, $color-dark-gray);
 }
 
 .add-item__description {
-  @include font-text($secondary-font, 14px, 1, $text-color);
+  @include font-text($secondary-font, 14px, 1, $color-greyish-brown);
 }
 
 .add-item__cost {
-  @include font-text($secondary-font, 14px, 1, $text-color);
+  @include font-text($secondary-font, 14px, 1, $color-greyish-brown);
+}
+
+.add-prod {
+  @include position-element;
+}
+
+.add-prod__wrap {
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
 }

@@ -1,13 +1,49 @@
 .promo {
-  @include mobile-padding;
   background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
+
+  @media (min-width: $width-tablet) {
+    background: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: $bg-promo url("../img/index-background-desktop@1x.jpg") no-repeat;
+    }
+  }
 }
 
-.promo_title {
-  @include font-text($primary-font, 36px, 1, #ffffff);
+.promo__wrap {
+  @include position-element;
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: $width-desktop;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.promo__title {
+  @include font-text($primary-font, 36px, 1, $color-lightest);
+
+  @media (min-width: $width-tablet) {
+    @include font-text($primary-font, 60px, 1, $color-dark);
+  }
 }
 
 .promo__text {
-  @include font-text($primary-font, 14px, 1, #ffffff);
+  @include font-text($primary-font, 14px, 1, $color-lightest);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($primary-font, 20px, 1, $color-dark);
+  }
 }

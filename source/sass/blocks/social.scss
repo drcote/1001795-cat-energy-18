@@ -1,3 +1,10 @@
+
 .social {
-  @include temp;
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
+.social li {
+  @include reset-list;
 }

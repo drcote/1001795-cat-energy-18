@@ -1,3 +1,7 @@
 .add-item {
-  @include temp;
+  border-top: 1px solid $color-pinkish-grey;
+
+  @media (min-width: $width-tablet) {
+    border: 1px solid $color-pinkish-grey;
+  }
 }

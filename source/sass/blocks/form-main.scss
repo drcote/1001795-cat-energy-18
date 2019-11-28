@@ -1,8 +1,33 @@
 .form-main__title {
-  @include font-text($primary-font, 36px, 1.67, $title-color);
+  @include position-element;
+  @include font-text($primary-font, 36px, 1.67, $color-dark);
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
 }
 
 .form-main__text {
-  @include font-text($primary-font, 14px, 1.29, $title-color);
+  @include position-element;
+  @include font-text($primary-font, 14px, 1.29, $color-dark);
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+.form-main__wrap {
+  @media (min-width: $width-tablet) {
+    @include position-element;
+  }
+}
+
+.form-main__button {
+  display: block;
+  margin-left: 20px;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+  }
 }

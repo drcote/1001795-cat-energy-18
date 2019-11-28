@@ -1,3 +1,12 @@
 .add-form {
   @include temp;
 }
+
+.add-form__legend {
+  display: block;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    display: inline;
+  }
+}

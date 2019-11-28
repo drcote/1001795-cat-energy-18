@@ -2,18 +2,11 @@
   background-color: $bg-sections;
 }
 
-.footer__text {
-  @include font-text($primary-font, 16px, 1.25, $title-color);
-}
-
-.footer__address {
-  @include font-text($secondary-font, 14px, 1.43, $text-color);
-}
-
 .footer__wrap {
-  @include mobile-padding;
-}
+  @include position-element;
 
-.footer__wrap--main {
-  background-color: white;
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
