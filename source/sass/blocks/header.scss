@@ -5,11 +5,12 @@
 }
 
 .header__wrap {
-  @include position-element;
   position: relative;
   z-index: 100;
+  padding-top: 11px;
 
   @media (min-width: $width-tablet) {
+    @include position-element;
     display: flex;
     justify-content: space-between;
   }

@@ -1,13 +1,34 @@
+.it-works__inner {
+  @include position-element;
+}
+
 .it-works__title {
   @include font-text($font-primary, 36px, 1.67, $color-dark);
+
+  margin-bottom: 27px;
 }
 
 .it-works__item {
   @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
   @include reset-list;
-  padding-top: 32px;
+
+  margin-top: 23px;
+  padding-top: 3px;
+  padding-left: 80px;
 }
 
-.it-works {
-  @include position-element;
+.it-works__item--leaf {
+  @include icon-it-works("../img/advantage-leaf@1x.png");
+}
+
+.it-works__item--powder {
+  @include icon-it-works("../img/advantage-powder@1x.png");
+}
+
+.it-works__item--dining {
+  @include icon-it-works("../img/advantage-dining@1x.png");
+}
+
+.it-works__item--clock {
+  @include icon-it-works("../img/advantage-clock@1x.png");
 }

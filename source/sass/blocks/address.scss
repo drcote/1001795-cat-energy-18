@@ -1,15 +1,20 @@
+.address__wrap {
+  @include position-element;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
 .address__title {
   @include font-text($font-primary, 16px, 1.25, $color-dark);
+
+  text-transform: uppercase;
 }
 
 .address__text {
   @include font-text($font-secondary, 14px, 1.43, $color-greyish-brown);
-}
-
-.address__wrap {
-  @include position-element;
-  display: flex;
-  justify-content: space-between;
 }
 
 .address--gray {

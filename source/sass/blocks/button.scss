@@ -1,4 +1,7 @@
 .button {
   display: block;
   text-decoration: none;
+  text-transform: uppercase;
+  color: $color-lightest;
+  background-color: $bg-promo;
 }

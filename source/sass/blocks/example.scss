@@ -1,30 +1,3 @@
-.example__title {
-  @include font-text($font-primary, 36px, 1.67, $color-dark);
-}
-
-.example__text {
-  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
-}
-
-.example__results {
-  @include font-text($font-primary, 24px, 1, $color-dark);
-}
-
-.example__description {
-  @include font-text($font-secondary, 12px, 1, $color-greyish-brown);
-}
-
-.example__cost {
-  @include font-text($font-primary, 14px, 1.43, $color-dark);
-  text-transform: uppercase;
-}
-
-.example__button-was,
-.example__button-become {
-  @include font-text($font-primary, 16px, 1.25, $color-dark);
-  text-transform: uppercase;
-}
-
 .example {
   background-color: $color-light-gray;
 
@@ -39,4 +12,118 @@
 
 .example__wrap {
   @include position-element;
+}
+
+.example__title {
+  @include font-text($font-primary, 36px, 1.67, $color-dark);
+
+  padding-top: 18px;
+}
+
+.example__text {
+  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
+
+  padding-top: 22px;
+  padding-right: 10px;
+}
+
+.example__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.example__box {
+  position: relative;
+  width: 124px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border: 1px solid $color-pinkish-grey;
+  border-radius: 5px;
+}
+
+.example__results {
+  @include font-text($font-primary, 24px, 1, $color-dark);
+
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__description {
+  @include font-text($font-secondary, 12px, 1, $color-greyish-brown);
+
+  position: absolute;
+  width: 80px;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  margin: 0 auto;
+  background-color: $color-light-gray;
+  text-align: center;
+}
+
+.example__cost {
+  @include font-text($font-primary, 14px, 1.43, $color-dark);
+
+  margin-top: 34px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__carousel {
+  margin-top: 30px;
+}
+
+.example__carousel-item-1,
+.example__carousel-item-2 {
+  @include reset-list;
+
+  height: 240px;
+}
+
+.example__carousel-item-1 {
+  background: url("../img/before-mobile@1x.png") no-repeat center;
+}
+
+.example__carousel-item-2 {
+  display: none;
+  background: url("../img/after-mobile@1x.png") no-repeat center;
+}
+
+.example__box-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 199px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-bottom: 37px;
+}
+
+.example__button {
+  @include font-text($font-primary, 16px, 1.25, $color-dark);
+
+  border: none;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.example__progress-bar {
+  width: 84px;
+  height: 14px;
+  padding: 4px 6px;
+  border: 1px solid $color-pinkish-grey;
+  border-radius: 6px;
+}
+
+.example__progress-toggle {
+  width: 50%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: $color-leaf;
+}
+
+.example__range {
+  display: none;
 }

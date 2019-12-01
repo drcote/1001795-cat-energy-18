@@ -1,3 +1,43 @@
-.nav__button {
+.nav--opend .site-list {
+  display: block;
+}
+
+.nav--opend .nav__button {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  border: none;
+  cursor: pointer;
+}
+
+.nav--closed .site-list {
   display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+}
+
+.nav--closed .nav__button {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  border: none;
+  cursor: pointer;
+}
+
+.nav--nojs .nav__button {
+  display: none;
+}
+
+.nav__button {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

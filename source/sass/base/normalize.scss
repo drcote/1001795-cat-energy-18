@@ -72,6 +72,9 @@ pre {
   font-size: 1em;
   /* 2 */
 }
+dd {
+  margin-inline-start: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -150,6 +153,11 @@ sup {
   top: -0.5em;
 }
 
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /* Embedded content
    ========================================================================== */
 
@@ -182,6 +190,7 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
+  padding: 0;
 }
 
 /**
@@ -385,6 +394,8 @@ template {
 }
 
 ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
   padding-inline-start: 0;
 }
 
@@ -392,6 +403,11 @@ h1,
 h2,
 h3,
 h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+dl {
   margin-block-start: 0;
   margin-block-end: 0;
 }

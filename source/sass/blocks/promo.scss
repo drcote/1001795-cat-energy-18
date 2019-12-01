@@ -1,14 +1,16 @@
 .promo {
-  background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat;
-
   @media (min-width: $width-tablet) {
     background: none;
   }
 
   &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 305px;
+    background: $bg-promo url("../img/index-background-mobile@1x.jpg") no-repeat center;
+
     @media (min-width: $width-desktop) {
-      content: "";
-      position: absolute;
       top: 0;
       right: 0;
       width: 50%;
@@ -23,16 +25,20 @@
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    width: $width-desktop;
     top: 100px;
     left: 0;
     right: 0;
+    width: $width-desktop;
     margin: 0 auto;
   }
 }
 
 .promo__title {
   @include font-text($font-primary, 36px, 1, $color-lightest);
+
+  position: relative;
+  padding-top: 25px;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     @include font-text($font-primary, 60px, 1, $color-dark);
@@ -41,9 +47,30 @@
 
 .promo__text {
   @include font-text($font-primary, 14px, 1, $color-lightest);
+
+  position: relative;
+  padding-top: 27px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     @include font-text($font-primary, 20px, 1, $color-dark);
   }
+}
+
+.promo__img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.promo__button {
+  @include font-text($font-primary, 14px, 1.29, $color-lightest);
+
+  margin-top: 4px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $color-leaf;
 }
