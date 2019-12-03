@@ -1,7 +1,13 @@
 .social {
   display: flex;
+  justify-content: space-between;
+  padding-left: 73px;
+  padding-right: 82px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-border;
 }
 
-.social li {
+.social__item {
   @include reset-list;
 }
