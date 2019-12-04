@@ -1,7 +1,3 @@
-.nav--opend .site-list {
-  display: block;
-}
-
 .nav--opend .nav__button {
   position: absolute;
   top: 19px;
@@ -15,10 +11,6 @@
 
 .nav--closed .site-list {
   display: none;
-
-  @media (min-width: $width-tablet) {
-    display: block;
-  }
 }
 
 .nav--closed .nav__button {

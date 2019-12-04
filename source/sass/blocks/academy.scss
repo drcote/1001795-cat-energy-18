@@ -14,4 +14,20 @@
   @include font-text ($font-secondary, 16px, 1, $color-greyish-brown);
 
   text-decoration: none;
+
+  &:active {
+    color: $color-greyish-brown-30;
+  }
+}
+
+.academy__img {
+  fill: $color-brownish-grey;
+
+  &:hover {
+    fill: $color-leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -3,6 +3,7 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $width-desktop) {
@@ -23,12 +24,28 @@
 
   &:last-child {
     border-bottom: 1px solid $color-border-menu;
+
+    @media (min-width: $width-tablet) {
+      border: none;
+    }
   }
 
   &--main {
     @media (min-width: $width-desktop) {
       color: $color-lightest;
     }
+  }
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 18px, 1.39, $color-dark-gray);
+
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border: none;
+  }
+
+  &--active {
+    border-bottom: 2px solid $color-leaf;
   }
 }
 

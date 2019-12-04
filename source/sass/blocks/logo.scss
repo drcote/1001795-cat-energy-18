@@ -1,10 +1,27 @@
-.logo__img--header {
-  margin-left: 20px;
-  margin-bottom: 13px;
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.logo__img--footer {
+.logo__img-header {
+  margin-left: 20px;
+  margin-bottom: 13px;
+
+  @media (min-width: $width-tablet) {
+    width: 174px;
+    height: auto;
+    margin: 0;
+  }
+}
+
+.logo__img-footer {
+  display: block;
+  margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 31px;
-  border-bottom: 1px solid $color-border;
 }

@@ -11,3 +11,17 @@
 .social__item {
   @include reset-list;
 }
+
+.social__vk,
+.social__insta,
+.social__fb {
+  fill: $color-brownish-grey;
+
+  &:hover {
+    fill: $color-leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

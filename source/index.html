@@ -11,8 +11,12 @@
 <body>
   <header class="header">
     <div class="header__wrap header__wrap--main">
-      <a class="logo">
-        <img src="img/logo-mobile.svg" alt="Кэт энерджи" class="logo__img--header" width="191px" height="38px">
+      <a class="logo header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Кэт энерджи" class="logo__img-header" width="191px" height="38px">
+        </picture>
       </a>
       <nav class="nav nav--opend nav--nojs header__nav">
         <button class="nav__button" type="button">
@@ -35,7 +39,10 @@
       <div class="promo__wrap">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img src="img/index-can-mobile@1x.png" alt="Банка с питанием" class="promo__img" width="280" height="271">
+        <picture>
+          <source media="(min-width:768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img src="img/index-can-mobile@1x.png" alt="Банка с питанием" class="promo__img" width="280" height="271">
+        </picture>
         <a href="form.html" class="promo__button button">Подобрать программу</a>
       </div>
     </section>
@@ -120,12 +127,14 @@
   </main>
   <footer class="footer">
     <div class="footer__wrap">
-      <a class="logo footer__logo">
-        <img src="img/logo-footer.svg" alt="Кэт энерджи" class="logo__img--footer" width="128" heiht="24">
-      </a>
+      <div class="footer__inner-logo">
+        <a class="logo">
+          <img src="img/logo-footer.svg" alt="Кэт энерджи" class="logo__img-footer" width="128" heiht="24">
+        </a>
+      </div>
       <ul class="social footer__social">
         <li class="social__item">
-          <a href="#">
+          <a href="#" class="social__vk">
             <svg width="22px" height="12px">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
@@ -133,7 +142,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
+          <a href="#" class="social__insta">
             <svg width="17px" height="17px">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
@@ -141,7 +150,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a href="#">
+          <a href="#" class="social__fb">
             <svg width="10px" height="19px">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
@@ -150,11 +159,12 @@
         </li>
       </ul>
       <ul class="academy footer__academy">
-        <li><a href="https://htmlacademy.ru/intensive/adaptive" class="academy__text">HTML Academy</a></li>
+        <li>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__text">HTML Academy</a></li>
         <li>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__img">
-            <svg width="27px" height="34px">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <svg width="26.943" height="34.09">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>
         </li>

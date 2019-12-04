@@ -1,11 +1,13 @@
 .address__wrap {
   @include position-element;
 
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: -38px;
   padding-top: 28px;
   padding-bottom: 26px;
-  margin-bottom: -38px;
+  background-color: $color-lightest;
 }
 
 .address__title {
