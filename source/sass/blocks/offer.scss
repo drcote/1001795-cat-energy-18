@@ -9,6 +9,10 @@
 .offer__wrap {
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 43px;
+  }
 }
 
 .offer__title {
@@ -28,6 +32,17 @@
     left: 2px;
     background-color: $color-leaf;
     border-radius: 25px;
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 36px, 1.03, $color-dark);
+
+    padding-top: 77px;
+    text-align: left;
   }
 }
 
@@ -42,6 +57,10 @@
     top: 22px;
     left: 10px;
     background: url("../img/icon-cat-slim.svg");
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
   }
 }
 

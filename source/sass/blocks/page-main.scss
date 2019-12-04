@@ -1,5 +1,9 @@
 .page-main__offer {
   margin-top: 23px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 0;
+  }
 }
 
 .page-main__it-works {
