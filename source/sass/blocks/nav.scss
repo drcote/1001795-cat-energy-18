@@ -11,6 +11,10 @@
 
 .nav--closed .site-list {
   display: none;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
 }
 
 .nav--closed .nav__button {
