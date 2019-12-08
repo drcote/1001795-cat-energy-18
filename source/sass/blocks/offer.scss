@@ -85,7 +85,7 @@
   padding-bottom: 22px;
   border-bottom: 1px solid $color-border;
 }
-
+// убрать псевдоэлемент, потому что нужно на стрелке менять цвет
 .offer__link {
   @include font-text($font-primary, 16px, 1, $color-dark);
 
@@ -103,5 +103,20 @@
     margin-top: 1px;
     margin-left: 12px;
     background: url("../img/icon-right-arrow-long.svg");
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      height: 11px;
+      background: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    color: $color-black-three-30;
+    &::after {
+      fill: $color-black-three-30;
+    }
   }
 }

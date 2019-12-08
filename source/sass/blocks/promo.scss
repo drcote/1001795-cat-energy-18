@@ -91,9 +91,6 @@
 
   margin-top: 4px;
   padding: 10px 0;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: $color-leaf;
 
   @media (min-width: $width-tablet) {
     @include font-text($font-primary, 20px, 1, $color-lightest);
