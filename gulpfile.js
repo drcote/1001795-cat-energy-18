@@ -65,13 +65,13 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("html", function() {
+/* gulp.task("html", function() {
   return gulp.src("source/*.html")
   .pipe(posthtml([
     include()
   ]))
   .pipe(gulp.dest("source"));
-});
+}); */
 
-gulp.task("build", gulp.series("css", "sprite", "html"));
+gulp.task("build", gulp.series("css", "sprite"));
 gulp.task("start", gulp.series("build", "server"));
