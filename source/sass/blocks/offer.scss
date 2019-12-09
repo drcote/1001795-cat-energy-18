@@ -101,22 +101,11 @@
   }
 }
 
-.offer__link:hover .offer__arrow-long {
-  display: none;
-}
-
-.offer__link:hover .offer__arrow-verylong {
-  display: block;
-}
-
 .offer__link:hover .offer__arrow {
   width: 32px;
 }
 
 .offer__arrow {
+  display: inline;
   margin-left: 7px;
-}
-
-.offer__arrow-verylong {
-  display: none;
 }
