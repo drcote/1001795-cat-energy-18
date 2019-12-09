@@ -1,16 +1,24 @@
-$primary-font: "Oswald";
-$secondary-font: "Arial";
+$font-primary: "Oswald";
+$font-secondary: "Arial";
 
 $color-dark: #111111;
 $color-lightest: #ffffff;
 $color-greyish-brown: #444444;
 $color-dark-gray: #222222;
 $color-leaf: #63a73a;
+$color-grass: #5eaa2f;
 $color-light-gray: #f2f2f2;
 $color-pinkish-grey: #cdcdcd;
+$color-border-menu: #e6e6e6;
+$color-border: #d9d9d9;
+$color-brownish-grey: #666666;
+$color-greyish-brown-30: rgba(68, 68, 68, 0.3);
+$color-black-three-30: rgba(17, 17, 17, 0.3);
 
 $bg-sections: $color-light-gray;
 $bg-promo: $color-leaf;
 
 $width-tablet: 768px;
-$width-desktop: 1300px;
+$width-desktop: 1280px;
+
+$retina-dppx: 1.5dppx;

@@ -1,19 +1,31 @@
+.address__wrap {
+  @include position-element;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -38px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  background-color: $color-lightest;
+}
+
 .address__title {
-  @include font-text($primary-font, 16px, 1.25, $color-dark);
+  @include font-text($font-primary, 16px, 1.25, $color-dark);
+
+  text-transform: uppercase;
 }
 
 .address__text {
-  @include font-text($secondary-font, 14px, 1.43, $color-greyish-brown);
-}
-
-.address__wrap {
-  @include position-element;
-  display: flex;
-  justify-content: space-between;
+  @include font-text($font-secondary, 14px, 1.43, $color-greyish-brown);
 }
 
 .address--gray {
   @media (min-width: $width-tablet) {
     background-color: $bg-sections;
   }
+}
+
+.address__map {
+  display: flex;
 }

@@ -1,6 +1,9 @@
 .academy {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .academy li {
@@ -8,5 +11,23 @@
 }
 
 .academy__text {
-  @include font-text ($secondary-font, 14px, 1, $color-greyish-brown);
+  @include font-text ($font-secondary, 16px, 1, $color-greyish-brown);
+
+  text-decoration: none;
+
+  &:active {
+    color: $color-greyish-brown-30;
+  }
+}
+
+.academy__img {
+  fill: $color-brownish-grey;
+
+  &:hover {
+    fill: $color-leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

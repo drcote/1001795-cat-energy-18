@@ -1,10 +1,10 @@
 .cat__label {
-  @include font-text($primary-font, 16px, 1.13, $color-dark-gray);
+  @include font-text($font-primary, 16px, 1.13, $color-dark-gray);
   text-transform: uppercase;
 }
 
 .cat__input {
-  @include font-text($primary-font, 16px, 1.13, $color-greyish-brown);
+  @include font-text($font-primary, 16px, 1.13, $color-greyish-brown);
   text-transform: uppercase;
 }
 

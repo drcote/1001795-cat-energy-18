@@ -1,9 +1,18 @@
 .offers {
   @include position-element;
-  margin-top: 2px;
 
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.offers__item {
+  &:last-child {
+    margin-top: 22px;
+
+    @media (min-width: $width-tablet) {
+      margin-top: 30px;
+    }
   }
 }

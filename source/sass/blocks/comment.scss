@@ -1,9 +1,9 @@
 .comment__legend {
-  @include font-text($primary-font, 24px, 1, $color-dark);
+  @include font-text($font-primary, 24px, 1, $color-dark);
 }
 
 .comment__textarea {
-  @include font-text($primary-font, 16px, 1.13, $color-greyish-brown);
+  @include font-text($font-primary, 16px, 1.13, $color-greyish-brown);
   text-transform: uppercase;
 }
 

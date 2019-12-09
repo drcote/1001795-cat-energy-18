@@ -1,19 +1,122 @@
 .offer {
   background-color: $bg-sections;
-  margin-top: 20px;
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
+}
+
+.offer__wrap {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 43px;
+  }
 }
 
 .offer__title {
-  @include font-text ($primary-font, 24px, 1.54, $color-dark);
+  @include font-text ($font-primary, 24px, 1.54, $color-dark);
+
+  position: relative;
+  padding-top: 30px;
   text-transform: uppercase;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 2px;
+    background-color: $color-leaf;
+    border-radius: 25px;
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 36px, 1.03, $color-dark);
+
+    padding-top: 77px;
+    text-align: left;
+  }
+}
+
+.offer__title--slim {
+  padding-left: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 50px;
+    top: 22px;
+    left: 10px;
+    background: url("../img/icon-cat-slim.svg");
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+}
+
+.offer__title--pro {
+  padding-left: 40px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 28px;
+    top: 34px;
+    left: -7px;
+    background: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .offer__text {
-  @include font-text($secondary-font, 14px, 1.29, $color-greyish-brown);
+  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
+
+  padding-top: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color-border;
 }
 
-@media (min-width: $width-desktop) {
-  .offer {
-    width: 570px;
+.offer__link {
+  @include font-text($font-primary, 16px, 1, $color-dark);
+
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:active {
+    color: $color-black-three-30;
+    fill: $color-black-three-30;
   }
+}
+
+.offer__link:hover .offer__arrow-long {
+  display: none;
+}
+
+.offer__link:hover .offer__arrow-verylong {
+  display: block;
+}
+
+.offer__link:hover .offer__arrow {
+  width: 32px;
+}
+
+.offer__arrow {
+  margin-left: 7px;
+}
+
+.offer__arrow-verylong {
+  display: none;
 }

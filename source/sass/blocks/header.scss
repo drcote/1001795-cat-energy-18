@@ -5,13 +5,15 @@
 }
 
 .header__wrap {
-  @include position-element;
   position: relative;
   z-index: 100;
+  padding-top: 11px;
 
   @media (min-width: $width-tablet) {
+    @include position-element;
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
   }
 }
 
@@ -22,12 +24,20 @@
 }
 
 .header__logo {
+  @media (min-width: $width-tablet) {
+    margin-right: 96px;
+  }
+
   @media (min-width: $width-desktop) {
     width: 610px;
   }
 }
 
 .header__nav {
+  @media (min-width: $width-tablet) {
+    flex-grow: 1;
+  }
+
   @media (min-width: $width-desktop) {
     width: 610px;
   }

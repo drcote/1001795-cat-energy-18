@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  color: $color-lightest;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $color-leaf;
+
+  &:hover {
+    background-color: $color-grass;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
