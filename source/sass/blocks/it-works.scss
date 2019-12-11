@@ -6,15 +6,39 @@
   @include font-text($font-primary, 36px, 1.67, $color-dark);
 
   margin-bottom: 27px;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 60px, 1, $color-dark);
+  }
+}
+
+.it-works__items {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+  }
 }
 
 .it-works__item {
   @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
   @include reset-list;
 
+  position: relative;
   margin-top: 23px;
   padding-top: 3px;
   padding-left: 80px;
+}
+
+.it-works__text {}
+
+.it-works__number {
+  @include font-text($font-primary, 281px, 1, $color-light-gray);
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
 }
 
 .it-works__item--leaf {

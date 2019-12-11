@@ -9,6 +9,10 @@
 .page-main__it-works {
   margin-top: 18px;
   margin-bottom: 45px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 45px;
+  }
 }
 
 .page-main__example-wrap {
