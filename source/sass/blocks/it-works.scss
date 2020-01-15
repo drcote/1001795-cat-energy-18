@@ -16,33 +16,59 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
 .it-works__item {
-  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
   @include reset-list;
 
   position: relative;
   margin-top: 23px;
   padding-top: 3px;
   padding-left: 80px;
+
+  @media (min-width: $width-tablet) {
+    width: 249px;
+    min-height: 233px;
+
+    margin-right: 75px;
+    margin-bottom: 61px;
+    padding-top: 135px;
+    padding-left: 0;
+  }
 }
 
-.it-works__text {}
+.it-works__text {
+  @include font-text($font-secondary, 14px, 1.29, $color-greyish-brown);
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 16px, 1.5, $color-greyish-brown);
+
+    text-align: start;
+  }
+}
 
 .it-works__number {
-  @include font-text($font-primary, 281px, 1, $color-light-gray);
+  display: none;
 
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 281px, 1, $color-light-gray);
+
+    display: block;
+    position: absolute;
+    top: -17px;
+    right: 2px;
+    z-index: -1;
+  }
 }
 
 .it-works__item--leaf {
   @include icon-it-works("../img/advantage-leaf@1x.png");
+
+  .it-works__number {
+    right: 20px;
+  }
 }
 
 .it-works__item--powder {

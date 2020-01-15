@@ -8,9 +8,41 @@
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
+
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
 
 .footer__inner-logo {
   border-bottom: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    border: none;
+    padding-top: 8px;
+  }
+}
+
+.footer__social {
+  padding-left: 73px;
+  padding-right: 82px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    flex-grow: 1;
+    padding: 0;
+    align-items: center;
+    border: none;
+  }
+}
+
+.footer__academy {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
 }

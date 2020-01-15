@@ -119,7 +119,9 @@
 }
 
 .offer__text--pro {
-  padding-right: 258px;
+  @media (min-width: $width-tablet) {
+    padding-right: 258px;
+  }
 }
 
 .offer__link {

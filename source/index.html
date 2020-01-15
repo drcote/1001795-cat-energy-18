@@ -93,12 +93,21 @@
               вещества.</p>
             <div class="it-works__number">1</div>
           </li>
-          <li class="it-works__item it-works__item--powder">Выпускается в виде порошка, который нужно лишь залить
-            кипятком и готово.</li>
-          <li class="it-works__item it-works__item--dining">Замените один-два приема обычной еды на наше функциональное
-            питание.</li>
-          <li class="it-works__item it-works__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-            питомца!</li>
+          <li class="it-works__item it-works__item--powder">
+            <p class="it-works__text">Выпускается в виде порошка, который нужно лишь залить
+              кипятком и готово.</p>
+            <div class="it-works__number">2</div>
+          </li>
+          <li class="it-works__item it-works__item--dining">
+            <p class="it-works__text">Замените один-два приема обычной еды на наше функциональное
+              питание.</p>
+            <div class="it-works__number">3</div>
+          </li>
+          <li class="it-works__item it-works__item--clock">
+            <p class="it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!</p>
+            <div class="it-works__number">4</div>
+          </li>
         </ul>
       </div>
     </section>
@@ -109,38 +118,52 @@
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__inner">
-          <dl class="example__box">
-            <dt class="example__results">5 кг</dt>
-            <dd class="example__description">Снижение веса</dd>
-          </dl>
-          <dl class="example__box">
-            <dt class="example__results">60 дней</dt>
-            <dd class="example__description">Затрачено времени</dd>
-          </dl>
-        </div>
-        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-        <ul class="example__carousel">
-          <li class="example__carousel-item-1"></li>
-          <li class="example__carousel-item-2"></li>
-        </ul>
-        <div class="example__box-button">
-          <button type="button" class="example__button example__button--was">Было</button>
-          <div class="example__progress-bar">
-            <input type="range" name="different" class="example__range" id="different">
-            <label for="different" class="visually-hidden">Изменение</label>
-            <div class="example__progress-toggle"></div>
+        <div class="example__stats">
+          <div class="example__inner">
+            <dl class="example__box">
+              <dt class="example__results">5 кг</dt>
+              <dd class="example__description">Снижение веса</dd>
+            </dl>
+            <dl class="example__box">
+              <dt class="example__results">60 дней</dt>
+              <dd class="example__description">Затрачено времени</dd>
+            </dl>
           </div>
-          <button type="button" class="example__button example__button--become">Стало</button>
+          <p class="example__cost">
+            Затраты на питание:
+            15 000 руб.
+          </p>
         </div>
+        <div class="example__wrap-carousel">
+          <ul class="example__carousel">
+            <li class="example__carousel-item-1"></li>
+            <li class="example__carousel-item-2"></li>
+          </ul>
+          <div class="example__box-button">
+            <button type="button" class="example__button example__button--was">Было</button>
+            <div class="example__progress-bar">
+              <input type="range" name="different" class="example__range" id="different">
+              <label for="different" class="visually-hidden">Изменение</label>
+              <div class="example__progress-toggle"></div>
+            </div>
+            <button type="button" class="example__button example__button--become">Стало</button>
+          </div>
+        </div>
+        <div class="example__background-color"></div>
       </div>
     </section>
     <section class="address">
       <div class="address__wrap">
         <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петергург</p>
+        <div class="address__text">
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__sity">Санкт-Петербург</p>
+        </div>
       </div>
-      <img src="img/bg-map-mobile@1x.png" alt="Карта" class="address__map" width="320" height="400">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img src="img/bg-map-mobile@1x.png" alt="Карта" class="address__map" width="320" height="400">
+      </picture>
     </section>
   </main>
   <footer class="footer">
@@ -152,24 +175,24 @@
       </div>
       <ul class="social footer__social">
         <li class="social__item">
-          <a href="#" class="social__vk">
-            <svg width="22px" height="12px">
+          <a href="#">
+            <svg class="social__vk" width="22px" height="12px">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__insta">
-            <svg width="17px" height="17px">
+          <a href="#">
+            <svg class="social__insta" width="17px" height="17px">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
             <span class="visually-hidden">Интсаграмм</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__fb">
-            <svg width="10px" height="19px">
+          <a href="#">
+            <svg class="social__fb" width="10px" height="19px">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
             <span class="visually-hidden">Фейсбук</span>
