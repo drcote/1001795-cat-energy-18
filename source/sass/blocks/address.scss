@@ -8,16 +8,44 @@
   padding-top: 28px;
   padding-bottom: 26px;
   background-color: $color-lightest;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+    padding: 48px 71px 54px 71px;
+  }
 }
 
 .address__title {
   @include font-text($font-primary, 16px, 1.25, $color-dark);
 
+  width: 40%;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 20px, 1.25, $color-dark);
+
+    width: 154px;
+    text-align: left;
+  }
 }
 
 .address__text {
   @include font-text($font-secondary, 14px, 1.43, $color-greyish-brown);
+
+  width: 50%;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 16px, 1.25, $color-greyish-brown);
+
+    width: 170px;
+    text-align: right;
+  }
+}
+
+.address__sity {
+  @media (min-width: $width-tablet) {
+    margin-top: 17px;
+  }
 }
 
 .address--gray {
@@ -28,4 +56,9 @@
 
 .address__map {
   display: flex;
+
+  @media (min-width: $width-tablet) {
+    width: 767px;
+    height: 400px;
+  }
 }

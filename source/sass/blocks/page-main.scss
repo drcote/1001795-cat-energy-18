@@ -9,8 +9,20 @@
 .page-main__it-works {
   margin-top: 18px;
   margin-bottom: 45px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid $color-border;
+  }
 }
 
-.page-main__example-wrap {
-  background-color: $bg-sections;
+.page-main__example {
+  padding-top: 18px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 43px;
+  }
 }

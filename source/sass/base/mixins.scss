@@ -78,5 +78,20 @@
     top: 5px;
     left: 5px;
     background: url($img);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 22px;
+      left: 0;
+    }
+
+    &::after {
+      top: 37px;
+      left: 15px;
+    }
   }
 }

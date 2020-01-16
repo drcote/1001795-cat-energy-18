@@ -12,12 +12,16 @@
 
 .example__wrap {
   @include position-element;
+
+  position: relative;
 }
 
 .example__title {
   @include font-text($font-primary, 36px, 1.67, $color-dark);
 
-  padding-top: 18px;
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 60px, 1, $color-dark);
+  }
 }
 
 .example__text {
@@ -25,21 +29,44 @@
 
   padding-top: 22px;
   padding-right: 10px;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 16px, 1.5, $color-greyish-brown);
+
+    padding-top: 64px;
+  }
+}
+
+.example__stats {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 28px;
+  }
 }
 
 .example__inner {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+
+  @media (min-width: $width-tablet) {
+    width: 366px;
+  }
 }
 
 .example__box {
   position: relative;
   width: 124px;
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   border: 1px solid $color-pinkish-grey;
   border-radius: 5px;
+
+  @media (min-width: $width-tablet) {
+    width: 162px;
+  }
 }
 
 .example__results {
@@ -48,6 +75,10 @@
   position: relative;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 30px, 1.23, $color-dark);
+  }
 }
 
 .example__description {
@@ -57,38 +88,90 @@
   width: 80px;
   left: 0;
   right: 0;
-  bottom: -16px;
+  bottom: -12px;
   margin: 0 auto;
   background-color: $color-light-gray;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
+
+    width: 129px;
+    bottom: -6px;
+    background-color: $color-lightest;
+  }
 }
 
 .example__cost {
   @include font-text($font-primary, 14px, 1.43, $color-dark);
 
-  margin-top: 34px;
+  margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 20px, 1, $color-dark);
+
+    width: 180px;
+    line-height: 30px;
+    margin-top: 31px;
+    text-align: right;
+  }
+}
+
+.example__wrap-carousel {
+  margin-top: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 87px;
+    padding-bottom: 48px;
+  }
 }
 
 .example__carousel {
-  margin-top: 30px;
+  height: 240px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: center;
+    width: 683px;
+    height: 516px;
+    margin: 0 auto;
+  }
 }
 
 .example__carousel-item-1,
 .example__carousel-item-2 {
   @include reset-list;
-
-  height: 240px;
 }
 
 .example__carousel-item-1 {
-  background: url("../img/before-mobile@1x.png") no-repeat center;
+  height: 100%;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $width-tablet) {
+    width: 50%;
+    background-image: url("../img/before-tablet@1x.png");
+    background-position-x: 4px;
+    background-size: cover;
+  }
 }
 
 .example__carousel-item-2 {
   display: none;
-  background: url("../img/after-mobile@1x.png") no-repeat center;
+  background-image: url("../img/after-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    width: 50%;
+    background-image: url("../img/after-tablet@1x.png");
+    background-position-x: -336px;
+    background-size: cover;
+  }
 }
 
 .example__box-button {
@@ -99,6 +182,11 @@
   margin: 0 auto;
   margin-top: 35px;
   padding-bottom: 37px;
+
+  @media (min-width: $width-tablet) {
+    width: 570px;
+    margin-top: 20px;
+  }
 }
 
 .example__button {
@@ -107,6 +195,13 @@
   border: none;
   text-transform: uppercase;
   background-color: inherit;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 20px, 1, $color-dark);
+
+    padding-bottom: 6px;
+    border-bottom: 1px dotted $color-border-example;
+  }
 }
 
 .example__progress-bar {
@@ -115,6 +210,15 @@
   padding: 4px 6px;
   border: 1px solid $color-pinkish-grey;
   border-radius: 6px;
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+    width: 430px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    background-color: $color-progrees-bar;
+  }
 }
 
 .example__progress-toggle {
@@ -122,8 +226,45 @@
   height: 100%;
   border-radius: 3px;
   background-color: $color-leaf;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    margin-top: -17px;
+    margin-left: -17px;
+    border: 1px solid $color-pinkish-grey;
+    border-radius: 17px;
+    background-color: $color-lightest;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      margin-left: -4px;
+      border-radius: 4px;
+      background-color: $color-leaf;
+    }
+  }
 }
 
 .example__range {
   display: none;
+}
+
+.example__background-color {
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(to right, $color-light-gray 0, $color-light-gray 50%, $color-very-light-pink 50%, $color-very-light-pink 100%);
+    z-index: -1;
+  }
 }
