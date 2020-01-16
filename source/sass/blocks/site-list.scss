@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    justify-content: center;
+    //justify-content: center;
   }
 }
 
@@ -55,9 +55,22 @@
       border-bottom: 2px solid $color-leaf;
     }
   }
+
+  @media (min-width: $width-desktop) {
+    @include font-text($font-primary, 20px, 1.25, $color-lightest);
+
+    &--active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $color-lightest;
+    }
+  }
 }
 
 .site-list__item a {
   text-decoration: none;
   color: $color-dark;
+
+  @media (min-width: $width-desktop) {
+    color: $color-lightest;
+  }
 }

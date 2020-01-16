@@ -18,6 +18,11 @@
     height: auto;
     margin: 0;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 203px;
+    height: auto;
+  }
 }
 
 .logo__img-footer {
