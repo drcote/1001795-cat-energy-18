@@ -14,5 +14,9 @@
     @media (min-width: $width-tablet) {
       margin-top: 30px;
     }
+
+    @media (min-width: $width-desktop) {
+      margin-top: 0;
+    }
   }
 }
