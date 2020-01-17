@@ -1,3 +1,9 @@
+.address {
+  @media (min-width: $width-desktop) {
+    position: relative;
+  }
+}
+
 .address__wrap {
   @include position-element;
 
@@ -12,6 +18,15 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
     padding: 48px 71px 54px 71px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    left: 40px;
+    padding: 65px 73px 58px 77px;
   }
 }
 
@@ -40,6 +55,10 @@
     width: 170px;
     text-align: right;
   }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+  }
 }
 
 .address__sity {
@@ -60,5 +79,10 @@
   @media (min-width: $width-tablet) {
     width: 767px;
     height: 400px;
+  }
+
+  @media (min-width: $width-desktop) {
+    height: 400px;
+    width: 1300px;
   }
 }

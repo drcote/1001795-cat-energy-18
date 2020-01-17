@@ -17,6 +17,12 @@
 
     border-bottom: 1px solid $color-border;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 72px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .page-main__example {
@@ -24,5 +30,9 @@
 
   @media (min-width: $width-tablet) {
     padding-top: 43px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 35px;
   }
 }

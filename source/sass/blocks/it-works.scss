@@ -37,6 +37,10 @@
     padding-top: 135px;
     padding-left: 0;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-right: -5px;
+  }
 }
 
 .it-works__text {
