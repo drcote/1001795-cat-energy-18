@@ -1,33 +1,33 @@
-.add-prod__title {
-  @include font-text($font-primary, 24px, 1, $color-dark);
-
-  @media (min-width: $width-desktop) {
-    @include line;
-  }
-}
-// отступы для примера
-.add-prod__title-wrap {
-  @include clear-line-element(0 20px 0 20px);
-}
-
-.add-item__title {
-  @include font-text($font-primary, 16px, 1, $color-dark-gray);
-}
-
-.add-item__description {
-  @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
-}
-
-.add-item__cost {
-  @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
-}
-
 .add-prod {
   @include position-element;
+
+  padding-top: 29px;
+  padding-bottom: 35px;
+}
+
+.add-prod__title {
+  @include font-text($font-primary, 24px, 1, $color-dark);
+  @include line(false);
+}
+
+// отступы для примера
+.add-prod__title-wrap {
+  //@include clear-line-element(0 20px 0 20px);
+  @include clear-line-element(0 20px 0 0);
 }
 
 .add-prod__wrap {
+  margin-top: 33px;
+
   @media (min-width: $width-desktop) {
     display: flex;
   }
+}
+
+.add-prod__add-item {
+  padding-bottom: 17px;
+}
+
+.add-prod__bonus {
+  margin-top: 20px;
 }

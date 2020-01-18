@@ -1,7 +1,44 @@
 .add-item {
   border-top: 1px solid $color-pinkish-grey;
+  padding-top: 13px;
+
+  &:last-child {
+    border-bottom: 1px solid $color-pinkish-grey;
+  }
 
   @media (min-width: $width-tablet) {
     border: 1px solid $color-pinkish-grey;
   }
+}
+
+.add-item__title {
+  @include font-text($font-primary, 16px, 1, $color-dark-gray);
+
+  text-transform: uppercase;
+}
+
+.add-item__table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.add-item__description {
+  @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
+
+  text-align: left;
+}
+
+.add-item__cost {
+  @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
+
+  text-align: right;
+}
+
+.add-item__order {
+  @include font-text($font-primary, 16px, 1.25, $color-lightest);
+
+  margin-top: 14px;
+  padding: 10px 20px;
 }

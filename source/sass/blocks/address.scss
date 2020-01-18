@@ -67,12 +67,6 @@
   }
 }
 
-.address--gray {
-  @media (min-width: $width-tablet) {
-    background-color: $bg-sections;
-  }
-}
-
 .address__map {
   display: flex;
 
@@ -84,5 +78,13 @@
   @media (min-width: $width-desktop) {
     height: 400px;
     width: 1300px;
+  }
+}
+
+.address--gray {
+  background-color: $color-light-gray;
+
+  @media (min-width: $width-tablet) {
+    background-color: $bg-sections;
   }
 }

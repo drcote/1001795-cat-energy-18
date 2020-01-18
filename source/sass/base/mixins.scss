@@ -13,12 +13,10 @@
 }
 
 @mixin position-element {
-  //width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $width-tablet) {
-    //width: $width-tablet;
     padding: 0 30px;
   }
 
@@ -28,7 +26,7 @@
   }
 }
 
-@mixin line {
+@mixin line ($left-line) {
   position: relative;
 
   &::before,
@@ -45,53 +43,59 @@
     left: 0;
   }
 
-  &::after {
+  @if $left-line {
+    &::after {
+      right: 0;
+    }
+
+    /*   &::after {
     right: 0;
+  } */
   }
 }
 
-@mixin clear-line-element($padding, $color:$color-lightest) {
-  position: relative;
-  padding: $padding;
-  background: $color;
-  z-index: 100;
-}
-
-@mixin icon-it-works($img) {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background-color: $color-leaf;
+  @mixin clear-line-element($padding, $color:$color-lightest) {
+    position: relative;
+    padding: $padding;
+    background: $color;
+    z-index: 100;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    top: 5px;
-    left: 5px;
-    background: url($img);
-    background-repeat: no-repeat;
-  }
+  @mixin icon-it-works($img) {
+    position: relative;
 
-  @media (min-width: $width-tablet) {
     &::before {
-      width: 80px;
-      height: 80px;
-      top: 22px;
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      top: 0;
       left: 0;
+      background-color: $color-leaf;
     }
 
     &::after {
-      top: 37px;
-      left: 15px;
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      top: 5px;
+      left: 5px;
+      background: url($img);
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $width-tablet) {
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: 22px;
+        left: 0;
+      }
+
+      &::after {
+        top: 37px;
+        left: 15px;
+      }
     }
   }
-}

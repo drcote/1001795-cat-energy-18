@@ -1,4 +1,10 @@
 .header {
+  border-bottom: 1px solid $color-border-menu;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
+
   @media (min-width: $width-desktop) {
     position: relative;
     margin-bottom: 80px;

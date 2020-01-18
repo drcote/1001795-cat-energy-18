@@ -1,6 +1,9 @@
 .products__title {
   @include position-element;
   @include font-text($font-primary, 36px, 1.67, $color-dark);
+
+  padding-top: 14px;
+  padding-bottom: 28px;
 }
 
 .products__wrap {
