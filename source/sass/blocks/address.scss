@@ -33,7 +33,7 @@
 .address__title {
   @include font-text($font-primary, 16px, 1.25, $color-dark);
 
-  width: 40%;
+  width: 45%;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {

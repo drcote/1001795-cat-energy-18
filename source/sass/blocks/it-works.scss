@@ -85,4 +85,10 @@
 
 .it-works__item--clock {
   @include icon-it-works("../img/advantage-clock@1x.png");
+
+  @media (min-width: $width-tablet) {
+    & span {
+      display: table;
+    }
+  }
 }
