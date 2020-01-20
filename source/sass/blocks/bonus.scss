@@ -7,7 +7,13 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
     height: 200px;
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 90px;
+    padding-right: 124px;
     background: $color-leaf url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
   }
 
@@ -29,4 +35,15 @@
   width: 132px;
   margin: 0 auto;
   margin-top: 57px;
+
+  @media (min-width: $width-tablet) {
+    width: auto;
+    margin: 0;
+    padding-top: 7px;
+    text-align: left;
+
+    & span {
+      display: table;
+    }
+  }
 }

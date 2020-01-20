@@ -8,16 +8,28 @@
 .add-prod__title {
   @include font-text($font-primary, 24px, 1, $color-dark);
   @include line(false);
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 36px, 1, $color-dark);
+    @include line(true);
+  }
 }
 
-// отступы для примера
+// отступы
 .add-prod__title-wrap {
-  //@include clear-line-element(0 20px 0 20px);
   @include clear-line-element(0 20px 0 0);
+
+  @media (min-width: $width-tablet) {
+    padding: 0 36px 0 36px;
+  }
 }
 
 .add-prod__wrap {
   margin-top: 33px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 79px;
+  }
 
   @media (min-width: $width-desktop) {
     display: flex;
@@ -26,8 +38,16 @@
 
 .add-prod__add-item {
   padding-bottom: 17px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 26px;
+  }
 }
 
 .add-prod__bonus {
   margin-top: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 94px;
+  }
 }

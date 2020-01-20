@@ -25,19 +25,27 @@
   width: 140px;
   height: 144px;
   margin-top: -20px;
+}
 
+.product__img--small {
   @media (min-width: $width-tablet) {
     position: absolute;
+    width: 322px;
+    height: auto;
     right: 50%;
     margin-right: -161px;
     margin-top: -67px;
   }
 }
 
-.product__img--small {
+.product__img--big {
   @media (min-width: $width-tablet) {
-    width: 322px;
+    position: absolute;
+    width: 326px;
     height: auto;
+    right: 50%;
+    margin-right: -163px;
+    margin-top: -103px;
   }
 }
 

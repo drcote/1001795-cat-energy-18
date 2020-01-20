@@ -11,10 +11,26 @@
   }
 }
 
+.add-item__inner {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-left: 38px;
+    margin-right: 34px;
+  }
+}
+
 .add-item__title {
   @include font-text($font-primary, 16px, 1, $color-dark-gray);
 
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 20px, 1, $color-dark-gray);
+
+    white-space: nowrap;
+  }
 }
 
 .add-item__table {
@@ -22,18 +38,32 @@
   margin-top: 12px;
   border-collapse: collapse;
   border-spacing: 0;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3px;
+  }
 }
 
-.add-item__description {
+.add-item__spec {
   @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
 
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 16px, 1.25, $color-greyish-brown);
+  }
+}
+
+.add-item__spec--description {
   text-align: left;
 }
 
-.add-item__cost {
-  @include font-text($font-secondary, 14px, 1, $color-greyish-brown);
-
+.add-item__spec--cost {
   text-align: right;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 51px;
+  }
 }
 
 .add-item__order {
@@ -41,4 +71,10 @@
 
   margin-top: 14px;
   padding: 10px 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 21px;
+    margin-left: 37px;
+    margin-right: 36px;
+  }
 }

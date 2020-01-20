@@ -2,10 +2,21 @@
   padding: 26px 20px 24px 20px;
   border: solid 1px $color-pinkish-grey;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .extra__plus {
   fill: $color-border;
+
+  @media (min-width: $width-tablet) {
+    width: 61px;
+    height: 61px;
+    margin-top: 28px;
+  }
 }
 
 .extra__title {
@@ -14,6 +25,15 @@
   display: block;
   margin-top: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 20px, 1, $color-dark);
+
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+  }
 }
 
 .extra__sub-title {
@@ -22,7 +42,16 @@
   display: block;
   margin-top: 9px;
   font-style: normal;
-  word-spacing: 4px;
+  //word-spacing: 4px;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-secondary, 16px, 1.33, $color-greyish-brown);
+
+    margin-top: 22px;
+    margin-left: 34px;
+    margin-right: 33px;
+    word-spacing: normal;
+  }
 }
 
 .extra__link {
@@ -31,4 +60,8 @@
   margin-top: 21px;
   padding: 10px 20px;
   background-color: $color-light-gray;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 83px;
+  }
 }

@@ -21,7 +21,8 @@
   }
 }
 
-.products__product {
+.products__product,
+.products__extra {
   @media (min-width: $width-tablet) {
     width: 324px;
     margin-top: 140px;
