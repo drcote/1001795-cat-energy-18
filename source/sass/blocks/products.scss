@@ -4,20 +4,27 @@
 
   padding-top: 14px;
   padding-bottom: 28px;
+
+  @media (min-width: $width-tablet) {
+    @include font-text($font-primary, 60px, 1, $color-dark);
+  }
 }
 
 .products__wrap {
   @media (min-width: $width-tablet) {
     @include position-element;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 25px;
   }
 }
 
 .products__product {
   @media (min-width: $width-tablet) {
     width: 324px;
+    margin-top: 140px;
   }
 
   @media (min-width: $width-desktop) {

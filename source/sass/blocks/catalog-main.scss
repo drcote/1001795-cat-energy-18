@@ -2,3 +2,9 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+.catalog-main__products {
+  @media (min-width: $width-tablet) {
+    margin-top: 54px;
+  }
+}
