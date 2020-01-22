@@ -9,6 +9,12 @@
     border: none;
     background-color: $color-light-gray;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 23px;
+  }
 }
 
 .product__wrap {
@@ -70,6 +76,10 @@
 
     margin: 0 65px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 52px;
+  }
 }
 
 .product__table {
@@ -85,6 +95,11 @@
     margin-top: 17px;
     padding-left: 17px;
     padding-right: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 
@@ -112,5 +127,10 @@
 
   @media (min-width: $width-tablet) {
     margin: 33px 18px 16px 18px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 34px;
+    margin-right: 32px;
   }
 }

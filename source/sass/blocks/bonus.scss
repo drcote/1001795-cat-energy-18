@@ -11,15 +11,19 @@
     justify-content: space-between;
     height: 200px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 73px;
     padding-left: 90px;
     padding-right: 124px;
     background: $color-leaf url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
   }
 
   @media (min-width: $width-desktop) {
+    display: block;
     width: 245px;
     height: 289px;
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 39px;
     background: $color-leaf url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
   }
 }
@@ -45,5 +49,10 @@
     & span {
       display: table;
     }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 51px;
+    text-align: center;
   }
 }

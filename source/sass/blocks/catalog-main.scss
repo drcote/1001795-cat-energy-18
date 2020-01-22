@@ -1,16 +1,29 @@
 .catalog-main {
   overflow-x: hidden;
   overflow-y: hidden;
+
+  @media (min-width: $width-desktop) {
+    margin-top: 72px;
+  }
 }
 
 .catalog-main__products {
   @media (min-width: $width-tablet) {
     margin-top: 54px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 0;
+  }
 }
 
 .catalog-main__add-prod {
   @media (min-width: $width-tablet) {
     margin-top: 68px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 79px;
+    margin-bottom: 83px;
   }
 }

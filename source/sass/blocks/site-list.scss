@@ -7,10 +7,10 @@
   }
 }
 
-/* .site-list__item a {
+.site-list__item a {
   text-decoration: none;
   color: $color-dark;
-} */
+}
 
 .site-list__item {
   @include reset-list;
@@ -54,16 +54,11 @@
 
     &--active {
       padding-bottom: 8px;
-      border-bottom: 2px solid $color-lightest;
+      border-bottom: 2px solid $color-leaf;
     }
   }
 }
 
-//.site-list__item a {
-//  text-decoration: none;
-  //color: $color-dark;
-
-//  @media (min-width: $width-desktop) {
-    //color: $color-lightest;
-//  }
-//}
+.site-list__item--main.site-list__item--active {
+  border-bottom: 2px solid $color-lightest;
+}
