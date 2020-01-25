@@ -1,3 +1,6 @@
 .legend {
   @include font-text($font-secondary, 14px, 1.14, $color-greyish-brown);
+
+  margin-top: 23px;
+  margin-bottom: 30px;
 }

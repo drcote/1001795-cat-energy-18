@@ -1,19 +1,65 @@
+.owner {
+  @include position-element;
+
+  border: none;
+  flex-direction: column;
+  margin-top: 29px;
+}
+
 .owner__legend {
   @include font-text($font-primary, 24px, 1, $color-dark);
+  @include line(false, 3px);
+
+  margin-bottom: 32px;
+
+  &::before,
+  &::after {
+    margin-top: -11px;
+  }
+}
+
+.owner__legend-text {
+  @include clear-line-element(0 20px 0 0);
+}
+
+.owner__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .owner__label {
   @include font-text($font-primary, 16px, 1.13, $color-dark-gray);
+
+  margin-right: 13px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .owner__input {
   @include font-text($font-primary, 16px, 1.13, $color-greyish-brown);
+
+  width: 100%;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border: 1px solid $color-pinkish-grey;
   text-transform: uppercase;
+  position: relative;
 }
 
-.owner {
-  @include position-element;
-  border: none;
-  flex-direction: column;
+.owner__input--mail {
+  background-size: 18px 14px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 50%;
+}
+
+.owner__input--phone {
+  background-size: 21px 21px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position-x: 94%;
+  background-position-y: 50%;
 }

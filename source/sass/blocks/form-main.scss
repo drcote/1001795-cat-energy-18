@@ -1,6 +1,13 @@
+.form-main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .form-main__title {
   @include position-element;
   @include font-text($font-primary, 36px, 1.67, $color-dark);
+
+  margin-top: 14px;
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -11,6 +18,10 @@
   @include position-element;
   @include font-text($font-primary, 14px, 1.29, $color-dark);
   text-transform: uppercase;
+
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 39px;
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -24,8 +35,13 @@
 }
 
 .form-main__button {
+  @include font-text($font-primary, 16px, 1.25, $color-lightest);
+
   display: block;
-  margin-left: 20px;
+  width: 100%;
+  margin-top: 36px;
+  padding: 10px 0;
+  border: none;
 
   @media (min-width: $width-tablet) {
     display: inline-block;

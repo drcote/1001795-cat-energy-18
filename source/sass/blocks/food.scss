@@ -3,13 +3,57 @@
   border: none;
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 .food__legend {
   @include font-text($font-primary, 24px, 1, $color-dark);
+  @include line(false, 3px);
+
+  margin-bottom: 33px;
+}
+
+.food__legent-text {
+  @include clear-line-element(0 20px 0 0);
+}
+
+.food__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.food__input {
+  display: none;
 }
 
 .food__label {
   @include font-text($font-primary, 16px, 1.13, $color-dark-gray);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.food__indicator {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+  border: 1px solid $color-pinkish-grey;
+}
+
+input[type="checkbox"]:checked + label .food__indicator::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 17px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
